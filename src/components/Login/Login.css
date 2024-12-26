@@ -1,0 +1,130 @@
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.login-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+.login-header {
+  margin-top: 10px;
+}
+
+.login-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  font-size: 16px;
+  color: #333;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.dot.active {
+  background: #002f34;
+}
+
+.login-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #002f34;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.phone-btn {
+  border: 2px solid #002f34;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #f4f4f4;
+}
+
+.or-text {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.email-link {
+  font-size: 14px;
+  color: #002f34;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+.login-footer {
+  font-size: 12px;
+  color: #555;
+  margin-top: 20px;
+}
+.login-footer a {
+  color: #002f34;
+  text-decoration: none;
+  font-weight: bold;
+}

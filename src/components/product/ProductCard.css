@@ -1,0 +1,129 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  background-color: #f7f8f9;
+}
+
+.olx-card {
+  background: #fff;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  position: relative;
+}
+
+.olx-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.heart-icon-container {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 148px;
+  left: 8px;
+  background: #ffce32;
+  color: #002f34;
+  padding: 1px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.olx-logo {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.olx-watermark {
+  height: 20px;
+  width: auto;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+.pricee {
+    font-size: 17px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titlee {
+  font-size: 14px;
+  color: #002f34;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.location-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #406367;
+  font-size: 12px;
+}
+
+.location,
+.date {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.Link-item{
+  text-decoration: none;
+}
